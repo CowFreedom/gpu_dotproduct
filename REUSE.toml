@@ -1,0 +1,6 @@
+version = 1 
+
+[[annotations]]
+path = ["src/"]
+SPDX-FileCopyrightText = "2024 CowFreedom <tristan.scheidemann@live.com>"
+SPDX-License-Identifier = "Apache 2.0"
