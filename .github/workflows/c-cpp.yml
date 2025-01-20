@@ -1,23 +1,13 @@
-name: C/C++ CI
-
+name: Build
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
+  build-project:
+    name: Build Project
+    runs-on: ubuntu-24.04
     steps:
-    - uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+      - name: Checkout Project
+        uses: actions/checkout@v4.2.2
+
+      - name: Build Project
+        uses: threeal/cmake-action@v2.1.0
