@@ -4,7 +4,7 @@
 #include <random>
 #include <memory>
 #include <iostream>
-#include <windows.h>
+//#include <windows.h>
 
 constexpr int PERFORMANCE_TEST_LOWER_LIMIT=64;
 constexpr int PERFORMANCE_TEST_UPPER_LIMIT=1<<27;

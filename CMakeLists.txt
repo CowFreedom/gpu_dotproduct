@@ -9,7 +9,7 @@ set (CMAKE_CXX_STANDARD 20)
 if (MSVC)
 
 else()
-    add_compile_options(-mavx)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
 endif()
 
 

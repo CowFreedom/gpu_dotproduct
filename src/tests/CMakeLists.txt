@@ -9,7 +9,7 @@ endif()
 
 
 add_executable(dotprod_test ${DOTPROD_TEST_SOURCE} ${DOTPROD_CUDA_SOURCE} helpers.h)
-target_include_directories(dotprod_test PRIVATE /)
+target_include_directories(dotprod_test PRIVATE "${PROJECT_SOURCE_DIR}/src/tests")
 
 target_link_libraries(dotprod_test PRIVATE dotprod_lib gtest_main)
 target_compile_definitions (dotprod_test PRIVATE ${DOTPROD_DEFINITIONS})

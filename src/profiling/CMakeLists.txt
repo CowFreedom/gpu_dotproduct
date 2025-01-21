@@ -6,13 +6,13 @@ set (DOTPROD_PROFILE_SOURCE
 )
 
 if (BUILD_CUDA_LIBRARY)
-	set(DOTPROD_PROFILE_CUDA_SOURCE  gpu/dp.cu)
+	set(DOTPROD_PROFILE_CUDA_SOURCE gpu/dp.cu)
 endif()	
 
 message(PROJECT_SOURCE_DIR="${PROJECT_SOURCE_DIR}")
 add_executable(dotprod_profiling ${DOTPROD_PROFILE_SOURCE} ${DOTPROD_PROFILE_CUDA_SOURCE} helpers.h)
 
-target_include_directories(dotprod_profiling PRIVATE /)
+target_include_directories(dotprod_profiling PRIVATE "${PROJECT_SOURCE_DIR}/src/profiling")
 
 target_link_libraries(dotprod_profiling PRIVATE dotprod_lib benchmark::benchmark)
 target_compile_definitions (dotprod_profiling PRIVATE ${DOTPROD_DEFINITIONS})
