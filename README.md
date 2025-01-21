@@ -9,3 +9,11 @@ While graphics professing units have deservedly found astounding success in many
 solutions for problems that are better served by other approaches.
 
 In [the blog post accompanying this repository](https://cowfreedom.de/#dot_product/introduction/) it is shown how a discrete GPU approach loses out to a vectorized CPU version in an almost embarassingly parallel task. In fact, it is investigated that on many computers the GPU version has no hope of catching up to the CPU approach due bandwith limits of PCI-Express itself. Nevertheless, the code in this repostiory serves as an approachable example that the expected results depend on the underlying hardware and proper analysis of all components is required to implement the right approach.
+
+## Contributing
+
+Interested in making contributions to this project? Please review the guides below.
+
+- [Contributing Guidelines](https://github.com/cowfreedom/.github/blob/master/CONTRIBUTING.md)
+- [Code of Conduct](https://github.com/cowfreedom/.github/blob/master/CODE_OF_CONDUCT.md)
+- [Security Policy](https://github.com/cowfreedom/.github/blob/master/SECURITY.md)
