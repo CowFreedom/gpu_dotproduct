@@ -1,4 +1,4 @@
-# Welcome to CowFreedom's contributing guide
+# Contributing Guidelines
 
 Thank you so much for wanting to contribute to this project!
 All of our contributors conform to the [Code of Conduct](./CODE_OF_CONDUCT.md) as seen here.
