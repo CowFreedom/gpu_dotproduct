@@ -1,7 +1,7 @@
 # Contributing Guidelines
 
 Thank you so much for wanting to contribute to this project!
-All of our contributors conform to the [Code of Conduct](./CODE_OF_CONDUCT.md) as seen here.
+All contributors shall conform to the [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 This guide will help you to get your contributions accepted.
 
