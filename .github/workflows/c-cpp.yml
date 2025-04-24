@@ -18,4 +18,4 @@ jobs:
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v2
         with:
-          subject-path: 'build/dotproduct_exe'
+          subject-path: 'build/dotprod_exe'
