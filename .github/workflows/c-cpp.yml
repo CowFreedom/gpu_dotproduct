@@ -1,5 +1,9 @@
 name: Build
 on: [push, pull_request]
+permissions:
+  id-token: write
+  contents: read
+  attestations: write
 jobs:
   build-project:
     name: Build Project
@@ -10,3 +14,8 @@ jobs:
 
       - name: Build Project
         uses: threeal/cmake-action@v2.1.0
+        
+      - name: Generate artifact attestation
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: 'build/dotprod_exe'
